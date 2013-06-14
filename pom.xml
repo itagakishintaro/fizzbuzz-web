@@ -6,7 +6,6 @@
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <tomcat.version>7.0.34</tomcat.version>
-    <sonar.language>js</sonar.language>
     <sonar.dynamicAnalysis>true</sonar.dynamicAnalysis>
   </properties>
   <build>
