@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-<!--     <tomcat.version>7.0.34</tomcat.version> -->
+    <tomcat.version>7.0.34</tomcat.version>
   </properties>
   <build>
     <sourceDirectory>src/main/java</sourceDirectory>
