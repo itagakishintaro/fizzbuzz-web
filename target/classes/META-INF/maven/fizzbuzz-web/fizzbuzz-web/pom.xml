@@ -6,7 +6,11 @@
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <tomcat.version>7.0.34</tomcat.version>
-    <sonar.dynamicAnalysis>true</sonar.dynamicAnalysis>
+	<sonar.language>java</sonar.language>
+    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+    <sonar.surefire.reportsPath>reports/junit</sonar.surefire.reportsPath>
+    <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+    <sonar.jacoco.reportPath>reports/coverage/jacoco.exec</sonar.jacoco.reportPath>
   </properties>
   <build>
     <sourceDirectory>src/main/java</sourceDirectory>
