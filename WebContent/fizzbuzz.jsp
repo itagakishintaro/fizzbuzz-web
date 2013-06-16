@@ -17,6 +17,6 @@
 	<input type="submit" value="Call">
 </form>
 <br>
-<%= answer != null ? "答え:"+answer : "" %>
+<div><%= answer != null ? "答え："+answer : "" %></div>
 </body>
 </html>
