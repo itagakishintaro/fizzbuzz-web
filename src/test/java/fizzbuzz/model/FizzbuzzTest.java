@@ -3,32 +3,56 @@ package fizzbuzz.model;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
-import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.experimental.theories.DataPoints;
+import org.junit.experimental.theories.Theories;
+import org.junit.experimental.theories.Theory;
+import org.junit.experimental.runners.Enclosed;
 
+@RunWith(Enclosed.class)
 public class FizzbuzzTest {
-	@Test
-	public void answerに3をコールすると答えはfizz() {
-		assertThat(Fizzbuzz.answer("3"), is("fizz"));
+
+	@RunWith(Theories.class)
+	public static class callが3の倍数の場合{
+		@DataPoints
+		public static String[] call = {"3", "３", "6"};
+
+		@Theory
+		public void 答えはfizz(String call) throws Exception {
+			assertThat(Fizzbuzz.answer(call), is("fizz"));
+		}
 	}
 
-	@Test
-	public void answerに5をコールすると答えはbuzz() {
-		assertThat(Fizzbuzz.answer("5"), is("buzz"));
+	@RunWith(Theories.class)
+	public static class callが5の倍数の場合{
+		@DataPoints
+		public static String[] call = {"5", "５", "10"};
+
+		@Theory
+		public void 答えはbuzz(String call) throws Exception {
+			assertThat(Fizzbuzz.answer(call), is("buzz"));
+		}
 	}
 
-	@Test
-	public void answerに15をコールすると答えはfizzbuzz() {
-		assertThat(Fizzbuzz.answer("15"), is("fizzbuzz"));
+	@RunWith(Theories.class)
+	public static class callが3の倍数かつ5の倍数の場合{
+		@DataPoints
+		public static String[] call = {"15", "１５", "30"};
+
+		@Theory
+		public void 答えはfizzbuzz(String call) throws Exception {
+			assertThat(Fizzbuzz.answer(call), is("fizzbuzz"));
+		}
 	}
 
-	@Test
-	public void answerに1をコールすると答えは1() {
-		assertThat(Fizzbuzz.answer("1"), is("1"));
-	}
+	@RunWith(Theories.class)
+	public static class callが3の倍数でも5の倍数でもない場合{
+		@DataPoints
+		public static String[] call = {"a", "1", "あ"};
 
-	@Test
-	public void answerにaをコールすると答えはa() {
-		assertThat(Fizzbuzz.answer("a"), is("a"));
+		@Theory
+		public void 答えはcallと同じ(String call) throws Exception {
+			assertThat(Fizzbuzz.answer(call), is(call));
+		}
 	}
-
 }
