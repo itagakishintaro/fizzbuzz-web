@@ -72,14 +72,12 @@ public class FizzbuzzAcceptanceTest {
 		assertThat(we.getText(), is("答え：fizzbuzz"));
 	}
 
-//	@もし("^\"([^\"]*)\"が整数以外$")
-//	public void が整数以外(String call) throws Throwable {
-//		setInput(call);
-//	}
-	@もし("^\"([^\"]*)\"が(\\d+)の倍数でも(\\d+)の倍数でもない$")
-	public void が_の倍数でも_の倍数でもない(String arg1, int arg2, int arg3) throws Throwable {
+	@もし("^\"([^\"]*)\"が３の倍数でも５の倍数でもない$")
+	public void が３の倍数でも５の倍数でもない(String call) throws Throwable {
 		setInput(call);
 	}
+
+
 	@ならば("^answerは\"([^\"]*)\"であるべき$")
 	public void answerは_であるべき(String arg1) throws Throwable {
 		assertThat(we.getText(), is("答え："+call));
