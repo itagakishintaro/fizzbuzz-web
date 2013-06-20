@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-//<title>fizzbuzz</title>
+<title>fizzbuzz</title>
 </head>
 <body>
 <h1>fizzbuzz</h1>
