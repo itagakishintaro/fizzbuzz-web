@@ -8,10 +8,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>fizzbuzz</title>
+<title>Fizzbuzz</title>
 </head>
 <body>
-<h1>fizzbuzz</h1>
+<h1>Fizzbuzz</h1>
 <form method="post" action="./fizzbuzz">
 	<input type="text" name="call">
 	<input type="submit" value="Call">
