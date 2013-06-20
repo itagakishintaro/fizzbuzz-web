@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.049" errors="0" skipped="0" tests="5" name="fizzbuzz.model.FizzbuzzTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk\jre\bin"/>
+    <property name="java.vm.version" value="23.3-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="JP"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\itagaki\git\fizzbuzz-web"/>
+    <property name="java.runtime.version" value="1.7.0_07-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\Program Files\Java\jdk\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\itagaki\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\Program Files\Jenkins\tools\Maven\Maven3.0.4\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="MS932"/>
+    <property name="java.library.path" value="D:\Program Files\Java\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio 2010\OEM\AudioCore\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Softex\OmniPass\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;c:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files (x86)\Fujitsu\FJAgent\Core\bin;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;D:\Program Files\Groovy\bin;D:\Program Files\Heroku\bin;C:\Program Files (x86)\git\cmd;D:\Program Files\Jenkins\tools\Maven\Maven3.0.4\bin;D:\Program Files\Java\jdk\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\itagaki"/>
+    <property name="user.timezone" value="Asia/Tokyo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="MS932"/>
+    <property name="user.name" value="itagaki"/>
+    <property name="java.class.path" value="D:\Program Files\Jenkins\tools\Maven\Maven3.0.4\bin\..\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\Program Files\Java\jdk\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ja"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_07"/>
+    <property name="java.ext.dirs" value="D:\Program Files\Java\jdk\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\Program Files\Java\jdk\jre\lib\resources.jar;D:\Program Files\Java\jdk\jre\lib\rt.jar;D:\Program Files\Java\jdk\jre\lib\sunrsasign.jar;D:\Program Files\Java\jdk\jre\lib\jsse.jar;D:\Program Files\Java\jdk\jre\lib\jce.jar;D:\Program Files\Java\jdk\jre\lib\charsets.jar;D:\Program Files\Java\jdk\jre\lib\jfr.jar;D:\Program Files\Java\jdk\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Program Files\Jenkins\tools\Maven\Maven3.0.4\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.004" classname="fizzbuzz.model.FizzbuzzTest" name="answer\u306B15\u3092\u30B3\u30FC\u30EB\u3059\u308B\u3068\u7B54\u3048\u306Ffizzbuzz"/>
+  <testcase time="0" classname="fizzbuzz.model.FizzbuzzTest" name="answer\u306B3\u3092\u30B3\u30FC\u30EB\u3059\u308B\u3068\u7B54\u3048\u306Ffizz"/>
+  <testcase time="0" classname="fizzbuzz.model.FizzbuzzTest" name="answer\u306B5\u3092\u30B3\u30FC\u30EB\u3059\u308B\u3068\u7B54\u3048\u306Fbuzz"/>
+  <testcase time="0" classname="fizzbuzz.model.FizzbuzzTest" name="answer\u306B1\u3092\u30B3\u30FC\u30EB\u3059\u308B\u3068\u7B54\u3048\u306F1"/>
+  <testcase time="0" classname="fizzbuzz.model.FizzbuzzTest" name="answer\u306Ba\u3092\u30B3\u30FC\u30EB\u3059\u308B\u3068\u7B54\u3048\u306Fa"/>
+</testsuite>
