@@ -77,9 +77,8 @@ public class FizzbuzzAcceptanceTest {
 		setInput(call);
 	}
 
-
 	@ならば("^answerは\"([^\"]*)\"であるべき$")
-	public void answerは_であるべき(String arg1) throws Throwable {
+	public void answerは_であるべき(String call) throws Throwable {
 		assertThat(we.getText(), is("答え："+call));
 	}
 
