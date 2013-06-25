@@ -32,7 +32,6 @@
 				<configuration>
 					<includes>
 						<include>**/*Test.java</include>
-						<include>**/*StepDefs.java</include>
 					</includes>
 				</configuration>
 			</plugin>
